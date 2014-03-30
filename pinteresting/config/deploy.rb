@@ -9,19 +9,14 @@ set :repo_url, 'git@github.com:teresanzano/onemonthrails.git'
 
 # Default deploy_to directory is /var/www/my_app
 set :deploy_to, '/root/onemonthrails/pinteresting'
+set :use_sudo, false
 
 # Default value for :scm is :git
 set :scm, :git
 set :branch, "master"
-
-
-set :rails_env, "Dev"
-
-
+set :rails_env, "Production"
 set :deploy_via, :remote_cache
-
 set :ssh_options, { :forward_agent => true, :port => 4321
-
 set :keep_releases, 5
 
 default_run_options[:pty] = true
