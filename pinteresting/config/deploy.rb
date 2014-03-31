@@ -1,5 +1,5 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'pinteresting'
+set :repo_url, 'git@github.com:teresanzano/onemonthrails.git'
 
 role :web, "162.243.236.170"                 
 role :app, "162.243.236.170"                        
@@ -15,8 +15,9 @@ set :deploy_via, :copy
 set :normalize_asset_timestamps, false
 
 require 'bundler/capistrano'
-require "rvm/capistrano"
+require 'bundler/deployment'
 set :rvm_type, :system
+
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # set :deploy_to, '/var/www/my_app'
