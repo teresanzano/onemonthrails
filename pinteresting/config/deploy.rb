@@ -8,9 +8,6 @@ role :db,  "162.243.236.170", :primary => true
 set :user, "rails"
 set :password, "X54GFxv5h2"
 
-set :stages, %w[staging production]
-set :default_stage, 'staging'
-
 set :use_sudo, false
 set :deploy_to, "/home/rails/"
 set :deploy_via, :copy
