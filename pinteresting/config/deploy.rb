@@ -1,3 +1,11 @@
+require 'bundler/capistrano'
+require "rvm/capistrano"
+
+# staging
+set :stages, ["staging", "production"]
+set :default_stage, "staging"
+
+
 set :application, "Pinteresting"
 set :repository,  "git@github.com:teresanzano/onemonthrails.git"
 
@@ -13,9 +21,6 @@ set :deploy_to, "/home/rails/"
 set :deploy_via, :copy
 
 set :normalize_asset_timestamps, false
-
-require 'bundler/capistrano'
-require "rvm/capistrano"
 
 set :rvm_type, :system
 namespace :deploy do
