@@ -1,5 +1,5 @@
 set :application, "Pinteresting"
-set :repository,  "git@github.com:teresanzano/onemonthrails.git"
+set :repo_url,  "git@github.com:teresanzano/onemonthrails.git"
 
 role :web, "162.243.236.170"                 
 role :app, "162.243.236.170"                        
