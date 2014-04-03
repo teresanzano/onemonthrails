@@ -1,7 +1,7 @@
 set :application, "production"
 set :rails_env, 'production'
 set :deploy_to, "/home/rails/"
-set :branch, 'develop'
+set :branch, 'master'
 
 role :app, '162.243.236.170'
 role :web, '162.243.236.170'
