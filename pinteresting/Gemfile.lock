@@ -150,6 +150,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   pg
+  rack
   rails (= 4.0.2)
   rails_12factor
   sass-rails (~> 4.0.0)
